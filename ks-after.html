@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Phoneshop</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="ps-bannercolor container-fluid">
+        <div class="container pb-1 d-flex align-items-center justify-content-between">
+          
+          <picture>
+            <a href="index.html"><img id="header-logo" src="images/phoneshopdark-solo.png" alt="Phoneshop logo"></a>
+            <p class="ps-text-orange logotagline">meer dan <spam id="jaarbestaan">27</spam> jaar telecomervaring!</p>
+          </picture>
+
+          <div class="d-flex align-items-center">
+            <div class="bg-white my-2 px-2 rounded-pill">
+              <input type="text" name="zoekVeld" id="zoekVeld" class="border-0" placeholder="Zoek (Model/SKU/Art.nr.)">
+              <button class="btn border-0 px-1" type="button"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="ms-2 d-flex flex-column flex-sm-row">
+              <div class="pt-1"><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person text-white h2 nudge"></i></a></div>
+              <div class="ms-sm-2"><a href="#" data-bs-toggle="modal" data-bs-target="#shoppingcartModal"><i class="bi bi-cart4 text-white h2"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ps-bannercolor">
+        <div class="container d-flex flex-column flex-md-row justify-content-evenly">
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Telefonisch bereikbaar op werkdagen tot 18:00 uur</p>
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Op werkdagen besteld voor 18:00 morgen in huis</p>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg ps-menucolor">
+        <div class="container">
+          <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav fw-semibold">
+              <a class="nav-item nav-link text-light" aria-current="page" href="index.html">Telefoons</a>
+              <a class="nav-item nav-link text-light" href="index.html">Tablets</a>
+              <a class="nav-item nav-link text-light" href="ks-main.html">Klantenservice</a>
+              <a class="nav-item nav-link text-light" href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NL/EN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NL</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="container">
+
+      <h1 class="h2 mt-3">Klantenservice</h1>
+
+      <div class="d-flex flex-wrap text-decoration-none">
+        <a href="ks-bestel.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-mailbox ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Bestellen</p>
+          </div>
+        </a>
+        <a href="ks-lever.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-truck ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Levering</p>
+          </div>
+        </a>
+        <a href="ks-klant.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-headset ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Klantenservice</p>
+          </div>
+        </a>
+        <a href="ks-verz.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-file-text ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Verzekeringen</p>
+          </div>
+        </a>
+        <a href="ks-after.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-person-plus ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Aftersales</p>
+          </div>
+        </a>
+        <a href="ks-faq.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-card-checklist ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Faq</p>
+          </div>
+        </a>
+        <a href="ks-ps.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-telephone ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Phoneshop</p>
+          </div>
+        </a>
+        <a href="ks-over.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-question-diamond ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Overige</p>
+          </div>
+        </a>
+      </div>
+
+      <h2 class="h3 mt-3">Aftersales</h2>
+      <h3 class="h4">Annuleren, omruil en retour</h3>
+      <h3 class="h4">Order annuleren</h3>
+      <p>U kunt uw order annuleren indien uw aanvraag voor een contract bij de betreffende provider nog niet is verwerkt. Zolang het bijbehorende toestel nog niet aan u is verzonden, kan ook de keuze voor het toestel nog aangepast worden. Eenmaal aangesloten/verlengde contracten kunnen niet meer geannuleerd worden.</p> 
+      <h3 class="h4">Regels voor annuleren en ruilen</h3>
+      <p class="mb-1">U kunt een order annuleren of uw aangeschafte product ruilen indien deze in originele en ongebruikte staat is. Het product dient nog compleet in onbeschadigde originele verpakking, inclusief alle toebehoren en handleidingen te zijn.</p>
+      <p class="mb-1">Voor alle abonnementen geldt een termijn van 14 kalenderdagen, ingaande op de dag van ondertekening van het contract.</p>
+      <p>De wettelijke bedenktijd geldt niet voor zakelijke bestellingen en geactiveerde prepaidpakketten. Wij streven ernaar om binnen 7 werkdagen na ontvangst uw retour te verwerken, mits voldaan is aan de genoemde voorwaarden. </p>
+      <h3 class="h4">Zichttermijn</h3>
+      <p class="mb-1">U heeft het recht om binnen een termijn van 14 dagen zonder opgave van redenen de overeenkomst te herroepen.</p>
+      <p class="mb-1">De herroepingstermijn verstrijkt 14 dagen na de dag waarop u of een door u aangewezen derde, die niet de vervoerder is, het goed fysiek in bezit krijgt.</p>
+      <p class="mb-1">De periode van 14 dagen is bedoeld om het product te bekijken en eventueel uit te proberen net zoals u dat in een fysieke winkel ook kunt doen. Een smartphone of tablet kunt u bekijken en enigszins aanzetten, maar niet activeren of koppelen aan een account van de fabrikant. In het geval van aanwezige gebruikssporen en of schade aan het product kan een  afwaardering ingehouden worden van de creditering.</p>
+      <p>Om het herroepingsrecht uit te oefenen, dient u ons via een  verklaring (bv. schriftelijk per post, fax of e-mail) op de hoogte stellen van uw beslissing de overeenkomst te herroepen:</p>
+      <table>
+        <tr><td>Per post:</td>
+          <td>Phoneshop </td></tr>
+        <tr><td>&nbsp;</td>
+          <td>Elbe 25</td></tr>
+        <tr> <td>&nbsp;</td>
+          <td>2491 BT 's-Gravenhage</td></tr>
+        <tr><td>Per e-mail:</td>
+          <td>sales@phoneshop.nl</td></tr>
+        <tr><td>Per fax:</td>
+          <td>070 - 427 18 87</td></tr>
+      </table>
+      <p class="mb-1">U kunt hiervoor gebruikmaken van <a href="/images/Modelformulier-ontbinding-herroeping-phoneshop.pdf" target="new">het modelformulier voor herroeping</a>, maar bent hiertoe niet verplicht.</p>
+      <p>Om de herroepingstermijn na te leven volstaat het om uw  mededeling betreffende uw uitoefening van het herroepingsrecht te verzenden voordat de herroepingstermijn is verstreken.</p>
+      <h4 class="h5">Gevolgen van de herroeping</h4>
+      <p class="mb-1">Als u de overeenkomst herroept, ontvangt u alle betalingen die u tot op dat moment heeft gedaan, inclusief leveringskosten (met uitzondering van eventuele extra kosten ten gevolge van uw keuze voor een andere wijze van levering dan de door ons geboden goedkoopste standaard levering) onverwijld en in ieder geval niet later dan 14 dagen nadat wij op de hoogte zijn gesteld van uw beslissing de overeenkomst te herroepen, van ons terug. Wij betalen u terug met hetzelfde betaalmiddel als waarmee u de oorspronkelijke transactie heeft verricht, tenzij u uitdrukkelijk anderszins heeft ingestemd; in ieder geval zullen u voor zulke terugbetaling geen kosten in rekening worden gebracht.</p>
+      <p class="mb-1">Wij mogen wachten met terugbetaling tot wij de goederen hebben terug ontvangen. 
+      <p class="mb-1">U dient de goederen onverwijld, doch in ieder geval niet later dan 14 dagen na de dag waarop u het besluit de overeenkomst te herroepen aan ons heeft medegedeeld, aan ons terug te zenden of te overhandigen. U bent op tijd als u de goederen terugstuurt voordat de termijn van 14 dagen is verstreken.</p>
+      <p>De  kosten van het terugzenden van de goederen komen  voor uw rekening.</p>
+
+      <h3 class="h4">RMA aanmelden</h3>
+      <p>Alvorens u het pakket retourzendt of retour brengt voor Reparatie/Omruil/Retour kunt u eerst een RMA aanmelden via de Orderstatus op onze website. Hier kunt u inloggen met uw e-mailadres en wachtwoord. Kies vervolgens voor de knop &lsquo;Meld Reparatie/Omruil/Retour aan&rsquo;. Bij de retourzending kunt u een kopie van de aankoopnota, een schrijven met reden van reparatie, omruil of retour en eventueel vermelding van het nieuw gewenste product bijvoegen om zodanig tot een vlotte afhandeling te komen.</p>
+      <h3 class="h4">Retourinstructies</h3>
+      <p>Verpak het artikel compleet met alle toebehoren, waaronder boekjes, oplader en accessoires in een doos en vul deze op met oude kranten of of ander beschermend materiaal. U bent zelf verantwoordelijk voor de staat waarin wij het artikel retour ontvangen. We adviseren u om de originele pakbon en een begeleidende brief met de reden van retourzending bij de zending toe te voegen. Vermeld indien u uw aankoopbedrag terug wilt ontvangen uw rekeningnummer in de brief. U kunt het pakket retourzenden aan:<br>
+      Phoneshop.nl<br>
+      T.a.v. afdeling RMA<br>
+      Elbe 25<br>
+      2491 BT  Den Haag</p>
+      <p>We adviseren u bij het postkantoor te verzenden met 'handtekening voor ontvangst'.  Dit is voordeliger dan aangetekend en ook een veilige manier van verzenden.  Bewaart u het tracktrace barcodenummer goed.<a name="Garantievoorwaarden" id="Garantievoorwaarden"></a></p>
+      <h3 class="h4">Garantievoorwaarden</h3>
+      <p>Phoneshop staat er voor in dat de producten en/of diensten voldoen aan de overeenkomst, de in het aanbod vermelde specificaties, aan de redelijke eisen van deugdelijkheid en/of bruikbaarheid en de op de datum van de totstandkoming van de overeenkomst bestaande wettelijke bepalingen en/of overheidsvoorschriften. Alle producten worden daarnaast geleverd inclusief algemene fabrieksgarantie. De garantietermijn is door de fabrikant gesteld op een termijn van twee jaar met uitzondering van Apple die een garantietermijn van een jaar hanteert. Voor Refurbished/Pre-owned toestellen geldt een garantietermijn van 6 maanden. Accessoires hebben ook een fabrieksgarantie van 6 maanden. Val-, stoot-, druk-, vocht- of waterschade en het openen van het toestel door derden zijn uitgesloten van garantie. In het geval van defecten welke buiten garantie vallen, zijn wij niet verantwoordelijk voor kosten die voortvloeien uit reparatie of onderzoek. Onderzoekskosten kunnen dan oplopen tot ongeveer &euro; 50,-. In een dergelijk geval kunt u kiezen om kosteloos afstand te doen van het toestel.</p> 
+      <h3 class="h4">Reparatieproces</h3>
+      <p>Als uw toestel defect is kunt u langs een servicepoint* gaan, of uw toestel ter reparatie inzenden aan of langsbrengen bij ons Repaircenter in onze winkel in Den Haag. Indien gerepareerd of omgeruild kan worden binnen de wettelijke garantietermijn en onder de garantievoorwaarden, gebeurt dit kosteloos. Indien uw toestel buiten de wettelijke garantietermijn of -voorwaarden valt ontvangt u eerst een prijsopgave. U kunt er dan voor kiezen het toestel tegen het voorgestelde tarief te laten repareren, of het toestel ongerepareerd retour te ontvangen (u betaalt dan wel de onderzoekskosten), of kosteloos afstand te doen van het toestel. <br/>* Dit met uitzondering van bepaalde Samsung DualSim modellen. Informeer hiervoor bij onze klantenservice.</p> 
+      <h3 class="h4">DOA</h3>
+      <p>Helaas komt het een enkele keer voor dat een toestel bij ontvangst niet naar behoren blijkt te werken. Dit noemt men een DOA (<u>D</u>ead <u>O</u>n <u>A</u>rrival). Mocht dit het geval zijn, dan kan het toestel omgeruild worden voor een ander exemplaar. U kunt het toestel dan voor omruiling insturen of langsbrengen. Het pakket wordt alleen omgeruild indien het toestel en bijbehorende accessoires in <u>volledige nieuwstaat</u> verkeren. Onderdelen behoren nog in de originele verpakking te zitten en voorzien te zijn van de originele stickers en beschermfolie. Tevens dient het toestel ongeregistreerd/ongeactiveerd te blijven. Indien dit niet het geval is zal omruiling niet mogelijk zijn.</p> 
+      <h3 class="h4">RMA aanmelden</h3>
+      <p>Alvorens u het pakket inzendt of langsbrengt voor reparatie dient u deze eerst voor een RMA aan te melden via de <a href="/orderstatus/" target="_blank">Orderstatus</a> op onze website. Hier kunt u inloggen met uw e-mailadres en wachtwoord. Kies vervolgens voor de knop &lsquo;Meld Reparatie/Omruil/Retour aan&rsquo;. Voor reparatie hoeft u alleen de benodigde onderdelen op te sturen. Voor omruiling van een DOA dient het volledige pakket opgestuurd te worden. Bij de zending dient een kopie van de aankoopnota, een schrijven met reden van retourzending en vermelding van het nieuw gewenste product te zitten. De kosten voor het inzenden zijn voor uw rekening.</p> 
+      <h3 class="h4">Fabrikanten</h3>
+      <p class="mb-1"><a href="http://www.apple.com/nl/" target="_blank"><img src="images/klantenservice/apple_logo.gif" width="141" height="50"/></a></p>
+      <p>Voor reparatie kunt u het toestel aanmelden bij Apple via telefoonnummer <strong>0900 7777 703</strong>. Na aanmelding zal Apple het toestel bij u afhalen en na reparatie weer retourneren.</p> 
+      <p><a href="http://www.apple.com/nl/support/iphone/contact/" target="_blank" >Voor meer informatie kunt u de site van Apple bezoeken.</a></p>
+      <p class="mb-1"><a href="http://nl.blackberry.com/" target="_blank"><img src="images/klantenservice/blackberry_logo.gif" width="141" height="50"/></a></p>
+      <p>Voor reparatie kunt u het toestel inzenden naar of langsbrengen bij ons eigen Servicepoint.</p> 
+      <p><a href="/rma/" target="_blank" >Meld uw toestel hiervoor bij ons aan en volg de verdere instucties.</a></p>
+      <p class="mb-1"><a href="http://www.htc.com/nl/" target="_blank"><img src="images/klantenservice/htc_logo.gif" width="141" height="50"/></a></p>
+      <p class="mb-1">Voor reparatie kunt u bellen naar het speciale HTC servicenummer (070 - 770 38 86) of kijk op <a href="http://www.htc.com/nl/support.aspx" target="_blank">http://www.htc.com/nl</a>.</p> 
+      <p class="mb-1">Binnen 14 dagen na de factuurdatum kunt u bij defecten het gehele verkooppakket aan ons inzenden voor de zogenaamde DOA procedure.</p> 
+      <p>Na goedkeuring vanuit HTC, zal uw apparaat door ons omgeruild worden voor een nieuw exemplaar. Deze procedure duurt circa 2 weken.</p>  
+      <p class="mb-1"><a href="http://www.lge.nl/" target="_blank"><img src="images/klantenservice/lg_logo.gif" width="141" height="50"/></a></p>
+      <p class="mb-1">Voor reparatie kunt u het toestel inzenden naar of langsbrengen bij ons eigen Servicepoint.</p>
+      <p><a href="/rma/" target="_blank" >Meld uw toestel hiervoor bij ons aan en volg de verdere instucties.</a></p>
+      <p class="mb-1"><a href="http://www.motorola.nl/" target="_blank"><img src="images/klantenservice/motorola_logo.gif" width="141" height="50"/></a></p>
+      <p>Voor reparatie kunt u het toestel inzenden naar of langsbrengen bij ons eigen Servicepoint.</p>
+      <p><a href="/rma/" target="_blank" >Meld uw toestel hiervoor bij ons aan en volg de verdere instucties.</a></p>
+      <p class="mb-1"><a href="http://www.microsoft.com/nl-nl" target="_blank"><img src="images/klantenservice/microsoft_logo.gif" width="141" height="50"/></a></p>
+      <p class="mb-1">U kunt uw toestel zelf insturen naar Microsoft/Nokia als deze binnen de garantie valt. Het grote voordeel hiervan is dat de snelheid van de reparaties aanzienlijk wordt vergroot.</p>
+      <p class="mb-1">Microsoft/Nokia adviseert klanten bij een storing met een toestel eerst de software van het toestel te updaten via Microsoft/Nokia Software Updater of via het toestel. Ook is het mogelijk om eerst de FAQ-/diagnosepagina's te raadplegen, voordat u uw  toestel opstuurt.</p>
+      <a href="https://devicesupport.microsoft.com/nl-nl" target="_blank">Klik hier om uw toestel aan te melden voor verzending naar het reparatie bedrijf</a> <br />
+      <p class="mb-1">Telefonische navraag over uw lopende reparatie: 0900-040.11.98 (lokaal tarief)</p>
+      <p>Ma-Vrij van 9:30 tot 17:30 uur</p>
+      <p class="mb-1"><a href="http://www.samsung.com/nl/" target="_blank"><img src="images/klantenservice/samsung_logo.gif" width="141" height="50"/></a></p>
+      <p class="mb-1">Voor reparatie kunt u bellen naar het speciale Samsung servicenummer (0900 - 202 00 88) of kijk op <a href="http://www.samsung.com/nl/support/location/supportServiceLocation.do?page=SERVICE.LOCATION" target="_blank">http://www.samsung.nl</a>.</p>
+      <p class="mb-1">Ook kunt u het toestel direct opsturen naar Samsung Repair:</p>
+      <p class="mb-1">Dynafix, Daelderweg 21, 6361 HK Nuth</p>
+      <p class="mb-1"><a href="http://www.dr-mobile.com/" target="_blank" >Klik hier om uw toestel aan te melden voor reparatie bij Samsung Repair Dynafix.</a></p>
+      <p class="h6 mb-3">NB. Dit met uitzondering van bepaalde Samsung DualSim modellen. Informeer hiervoor bij onze klantenservice.</p>
+      <p class="mb-1"><a href="http://www.sonymobile.com/" target="_blank"><img src="images/klantenservice/sony_logo.gif" alt="Sony"/></a></p>
+      <p class="mb-1">Voor reparatie kunt u het toestel inzenden naar of langsbrengen bij ons eigen Servicepoint.</p>
+      <p><a href="/orderstatus/" target="_blank" >Meld uw toestel hiervoor bij ons aan en volg de verdere instucties.</a></p>
+      <p class="mb-1"><a href="http://www.huawei.com/nl/" target="_blank"><img src="images/klantenservice/huawei_logo.gif" alt="Huawei"/></a></p>
+      <p class="mb-1">Voor reparatie kunt u het toestel inzenden naar of langsbrengen bij ons eigen Servicepoint.</p>
+      <p><a href="/orderstatus/" target="_blank" >Meld uw toestel hiervoor bij ons aan en volg de verdere instucties.</a></p>
+      <p class="mb-1"><a href="http://www.t-mobile.nl/" target="_blank"><img src="images/klantenservice/tmobile_logo.gif" alt="T-Mobile"/></a></p>
+      <p>Voor reparatie van uw T-Mobile toestel kunt u contact opnemen met T-Mobile via het telefoonnummer: 0800 - 7111.</p>
+
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Inloggen bij Phoneshop </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <label class="order-label my-1" for="login_user">E-mailadres</label>
+                <input class="order-input" type="text" id="login_user" name="login_user" placeholder="E-mailadres">
+              </div>
+              <div>
+                <label class="order-label my-1" for="login_pass">Wachtwoord</label>
+                <input class="order-input" type="password" id="login_pass" name="login_pass">
+              </div>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#loginRecoverModal">Wachtwoord vergeten?</a>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-primary">Inloggen</button>
+            </div>
+          </div>
+        </div>
+       </div> 
+
+       <!-- Login Recover Modal -->
+      <div class="modal fade" id="loginRecoverModal" tabindex="-1" aria-labelledby="loginRecoverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5 text-white" id="loginRecoverModalLabel">Wachtwoord vergeten?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Vul je e-mailadres in, dan sturen we je een e-mail waarmee je je wachtwoord opnieuw kunt instellen.</p>
+              <div>
+                <label class="order-label my-1" for="login_recover">E-mailadres</label>
+                <input class="order-input" type="text" id="login_recover" name="login_recover" placeholder="E-mailadres">
+              </div>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-primary">Stuur e-mail</button>
+            </div>
+          </div>
+        </div>
+       </div> 
+
+      <!-- Shoppingcart Modal -->
+      <div class="modal fade" id="shoppingcartModal" tabindex="-1" aria-labelledby="shoppingcartModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5" id="shoppingcartModalLabel">Winkelmandje</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Aantal</th>
+                    <th class="text-nowrap" scope="col">Per stuk</th>
+                    <th scope="col">Totaal</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">Apple iPad Air 2022 10.9 WiFi + 5G 64GB Space Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caterpillar CAT S42H+ Dual Sim 32GB Black</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fairphone 4 6/128GB Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Apple iPhone 12 Pro - 1TB</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="3" class="text-end" >Totaal excl. BTW</th>
+                    <td>&euro;396</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Verder winkelen</button>
+              <a class="btn btn-primary" href="order.html">Bestellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-light p-3 border-top">
+      <p class="text-center mb-0"><small>&copy; 2009-2023 - Alle vermelden prijzen zijn exclusief BTW - <a href="http://www.phoneshop.nl/voorwaarden" target="blank" >Algemene voorwaarden</a>
+      <br>Phoneshop - Elbe 25 - 2491 BT Den Haag - tel. +31(0)70-427.62.62 - KvK nr. 27149566 - BTW nr. NL 805.653.193 B01<br>
+      Ingelogd als Peter Vossen Inc.</small></p>
+    </footer>
+
+  </body>
+</html>

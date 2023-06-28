@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Phoneshop</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="ps-bannercolor container-fluid">
+        <div class="container pb-1 d-flex align-items-center justify-content-between">
+          
+          <picture>
+            <a href="index.html"><img id="header-logo" src="images/phoneshopdark-solo.png" alt="Phoneshop logo"></a>
+            <p class="ps-text-orange logotagline">meer dan <spam id="jaarbestaan">27</spam> jaar telecomervaring!</p>
+          </picture>
+
+          <div class="d-flex align-items-center">
+            <div class="bg-white my-2 px-2 rounded-pill">
+              <input type="text" name="zoekVeld" id="zoekVeld" class="border-0" placeholder="Zoek (Model/SKU/Art.nr.)">
+              <button class="btn border-0 px-1" type="button"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="ms-2 d-flex flex-column flex-sm-row">
+              <div class="pt-1"><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person text-white h2 nudge"></i></a></div>
+              <div class="ms-sm-2"><a href="#" data-bs-toggle="modal" data-bs-target="#shoppingcartModal"><i class="bi bi-cart4 text-white h2"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ps-bannercolor">
+        <div class="container d-flex flex-column flex-md-row justify-content-evenly">
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Telefonisch bereikbaar op werkdagen tot 18:00 uur</p>
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Op werkdagen besteld voor 18:00 morgen in huis</p>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg ps-menucolor">
+        <div class="container">
+          <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav fw-semibold">
+              <a class="nav-item nav-link text-light" aria-current="page" href="index.html">Telefoons</a>
+              <a class="nav-item nav-link text-light" href="index.html">Tablets</a>
+              <a class="nav-item nav-link text-light" href="ks-main.html">Klantenservice</a>
+              <a class="nav-item nav-link text-light" href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NL/EN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NL</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-2">
+
+      <h1 class="h3 mt-2 ps-1">Bestelling afronden</h1>
+
+      <div class="d-flex flex-column flex-xl-row-reverse">
+        <div id="shopping-basket" class="flex-grow-1 ps-light-blue m-1 p-2">
+          <h2 class="h4">Winkelmandje</h2>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Aantal</th>
+                <th scope="col">Per stuk</th>
+                <th scope="col">Totaal</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">Apple iPad Air 2022 10.9 WiFi + 5G 64GB Space Grey</th>
+                <td class="p-1"><input value="1" type="number"></td>
+                <td>&euro;99</td>
+                <td>&euro;99</td>
+              </tr>
+              <tr>
+                <th scope="row">Caterpillar CAT S42H+ Dual Sim 32GB Black</th>
+                <td class="p-1"><input value="1" type="number"></td>
+                <td>&euro;99</td>
+                <td>&euro;99</td>
+              </tr>
+              <tr>
+                <th scope="row">Fairphone 4 6/128GB Grey</th>
+                <td class="p-1"><input value="1" type="number"></td>
+                <td>&euro;99</td>
+                <td>&euro;99</td>
+              </tr>
+              <tr>
+                <th scope="row">Apple iPhone 12 Pro - 1TB</th>
+                <td class="p-1"><input value="1" type="number"></td>
+                <td>&euro;99</td>
+                <td>&euro;99</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="3" class="text-end" >Totaal excl. BTW</th>
+                <td>&euro;396</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+
+        <div class="flex-grow-1 pe-1">
+          
+          <form action="/action_page.php">
+            
+            <div class="m-1 p-2 ps-light-blue">
+              <div class="mb-2">
+                  <span>Bestaande of nieuwe klant?: </span>
+                  <input class="ms-2" type="radio" id="nieuweklant" name="klant" value="nieuwe klant" checked>
+                  <label class="me-3" for="nieuweklant">Nieuw</label>
+                  <input type="radio" id="bestaandeklant" name="klant" value="bestaande klant" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <label for="bestaandeklant">Bestaand</label>
+              </div>                                     
+              <h2 class="h4">Factuurgegevens</h2>
+              <div>
+                <label class="order-label my-1" for="fvoorletter">Naam</label>
+                <input class="order-input" type="text" id="fvoorletter" name="fvoorletter" placeholder="Voorletters">
+                <input class="order-input" type="text" id="fachternaam" name="fachternaam" placeholder="Achternaam">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fbedrijf">Bedrijfsnaam</label>
+                <input class="order-input" type="text" id="fbedrijf" name="fbedrijf" placeholder="Bedrijfsnaam">
+                <span class="fw-light">(optioneel)</span>
+              </div>
+              <div>
+                <label class="order-label mt-3 mb-1" for="fstraat">Adres</label>
+                <input class="order-input" type="text" id="fstraat" name="fstraat" placeholder="Straatnaam">
+                <input class="order-input" type="text" id="fhuisnummer" name="fhuisnummer" placeholder="Huisnummer">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fpostcode"></label>
+                <input class="order-input" type="text" id="fpostcode" name="fpostcode" placeholder="Postcode">
+                <input class="order-input" type="text" id="fstad" name="fstad" placeholder="Stad">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fland">Land:</label>
+                <select class="order-input" id="fland" name="fland">
+                  <option id="landNl" value="Nederland">Nederland</option>
+                  <option id="landBe" value="Belgie">België</option>
+                </select>
+              </div>
+              <div>
+                <label class="order-label mt-3 mb-1" for="ftelefoon">Telefoon</label>
+                <input class="order-input" type="text" id="ftelefoon" name="ftelefoon" placeholder="Nummer">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fmail">E-mailadres</label>
+                <input class="order-input" type="text" id="fmail" name="fmail" placeholder="E-mailadres">
+              </div>
+              <div id="btwIdBox" class="collapse">
+                <label class="order-label my-1" for="fbtwid">BTW ID</label>
+                <input class="order-input" type="text" id="fbtwid" name="fbtwid" placeholder="BTW ID">
+              </div>
+              <div class="mt-3">
+                  <div class="d-flex flex-wrap">
+                    <span>Afleveradres: </span>
+                    <div>
+                      <input class="ms-2" type="radio" id="bezorgzelf" name="bezorg" value="bezorg zelfde">
+                      <label class="me-3" for="bezorgzelf">Zelfde adres</label>
+                      <input type="radio" id="bezorganders" name="bezorg" value="bezorg anders">
+                      <label class="me-3" for="bezorganders">Ander adres</label>
+                      <input type="radio" id="bezorgafhaal" name="bezorg" value="bezorg afhalen">
+                      <label for="bezorgafhaal">Afhalen* (geen verzendkosten)</label>                      
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="mx-1 mt-2 p-2 ps-light-blue collapse" id="collapseBezorg">
+              <h2 class="h4">Bezorgadres</h2>
+              <div>
+                <label class="order-label my-1" for="fbvoorletter">Naam</label>
+                <input class="order-input" type="text" id="fbvoorletter" name="fbvoorletter" placeholder="Voorletters">
+                <input class="order-input" type="text" id="fbachternaam" name="fbachternaam" placeholder="Achternaam">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fbbedrijf">Bedrijfsnaam</label>
+                <input class="order-input" type="text" id="fbbedrijf" name="fbbedrijf" placeholder="Bedrijfsnaam">
+                <span class="fw-light">(optioneel)</span>
+              </div>
+              <div>
+                <label class="order-label mt-3 mb-1" for="fbstraat">Adres</label>
+                <input class="order-input" type="text" id="fbstraat" name="fbstraat" placeholder="Straatnaam">
+                <input class="order-input" type="text" id="fbhuisnummer" name="fbhuisnummer" placeholder="Huisnummer">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fbpostcode"></label>
+                <input class="order-input" type="text" id="fbpostcode" name="fbpostcode" placeholder="Postcode">
+                <input class="order-input" type="text" id="fbstad" name="fbstad" placeholder="Stad">
+              </div>
+              <div>
+                <label class="order-label my-1" for="fbland">Land:</label>
+                <select class="order-input" id="fbland" name="fbland">
+                  <option value="Nederland">Nederland</option>
+                  <option value="Belgie">België</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mx-1 mt-2 p-2 ps-light-blue">
+              <h2 class="h4">Betaalwijze</h2>
+              <div class="ps-1">
+                <p class="mb-0 fw-medium">Betaal per bank</p>
+                <input class="me-2" type="radio" id="ideal" value="ideal" name="betaalwijze"><label for="ideal">iDEAL</label>
+                  <select name="ideal_bank" id="ideal_bank">
+                    <option value="ABNANL2A">ABN AMRO</option>
+                    <option value="ASNBNL21">ASN Bank</option>
+                    <option value="BUNQNL2A">bunq</option>
+                    <option value="INGBNL2A">ING</option>
+                    <option value="KNABNL2H">Knab</option>
+                    <option value="RABONL2U">Rabobank</option>
+                    <option value="RBRBNL21">Regiobank</option>
+                    <option value="REVOLT21">Revolut</option>
+                    <option value="SNSBNL2A">SNS Bank</option>
+                    <option value="TRIONL2U">Triodos</option>
+                    <option value="FVLBNL22">Van Lanschot</option>
+                    <option value="BITSNL2A">Yoursafe</option>
+                  </select><br>
+                <input class="me-2" type="radio" id="overmaken" value="overmaken" name="betaalwijze"><label for="overmaken">Overmaken</label><br>
+                <p class="mb-0 mt-1 fw-medium">Betaal per creditcard</p>
+                <input class="me-2" type="radio" id="maestro" value="maestro" name="betaalwijze"><label for="maestro">Maestro (+ 2.00%)</label><br>
+                <input class="me-2" type="radio" id="americanexpress" value="americanexpress" name="betaalwijze"><label for="americanexpress">American Express (+ 2.30%)</label><br>
+                <p class="mb-0 mt-1 fw-medium"> Betaal per bank (België)</p>
+                <input class="me-2" type="radio" id="becbc" value="becbc" name="betaalwijze"><label for="becbc">CBC Online (+ 2.70%)</label><br>
+                <input class="me-2" type="radio" id="bekbc" value="bekbc" name="betaalwijze"><label for="bekbc">KBC Online (+ 2.70%)</label><br>
+                <input class="me-2" type="radio" id="bebelfius" value="bebelfius" name="betaalwijze"><label for="bebelfius">Belfius Direct Net (+ 2.00%)</label><br>
+                <div id="contantOptie" class="collapse">
+                  <p class="mb-0 mt-1 fw-medium"> Contant</p>
+                  <input class="me-2" type="radio" id="contant" value="contant" name="betaalwijze"><label for="contant">Contant bij afhalen</label><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="d-flex justify-content-between mx-1 mt-2 mb-1 p-2 ps-light-blue">
+              <p class="my-1">
+                <small>* Door te bestellen gaat u akkoord met de algemene voorwaarden van Phoneshop</small>
+              </p>
+              <button type="button" class="btn btn-primary d-block align-self-start ms-2" title="Afzender" >Bestel</button>    
+            </div>
+            
+          </form>
+
+        </div>
+      </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header ps-menucolor text-white">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Inloggen bij Phoneshop </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="order-label my-1" for="login_user">E-mailadres</label>
+              <input class="order-input" type="text" id="login_user" name="login_user" placeholder="E-mailadres">
+            </div>
+            <div>
+              <label class="order-label my-1" for="login_pass">Wachtwoord</label>
+              <input class="order-input" type="password" id="login_pass" name="login_pass">
+            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginRecoverModal">Wachtwoord vergeten?</a>
+          </div>
+          <div class="modal-footer ps-light-blue">
+            <button type="button" class="btn btn-primary">Inloggen</button>
+          </div>
+        </div>
+      </div>
+     </div> 
+
+     <!-- Login Recover Modal -->
+    <div class="modal fade" id="loginRecoverModal" tabindex="-1" aria-labelledby="loginRecoverModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header ps-menucolor text-white">
+            <h1 class="modal-title fs-5 text-white" id="loginRecoverModalLabel">Wachtwoord vergeten?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Vul je e-mailadres in, dan sturen we je een e-mail waarmee je je wachtwoord opnieuw kunt instellen.</p>
+            <div>
+              <label class="order-label my-1" for="login_recover">E-mailadres</label>
+              <input class="order-input" type="text" id="login_recover" name="login_recover" placeholder="E-mailadres">
+            </div>
+          </div>
+          <div class="modal-footer ps-light-blue">
+            <button type="button" class="btn btn-primary">Stuur e-mail</button>
+          </div>
+        </div>
+      </div>
+     </div> 
+
+      <!-- Shoppingcart Modal -->
+      <div class="modal fade" id="shoppingcartModal" tabindex="-1" aria-labelledby="shoppingcartModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5" id="shoppingcartModalLabel">Winkelmandje</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Aantal</th>
+                    <th class="text-nowrap" scope="col">Per stuk</th>
+                    <th scope="col">Totaal</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">Apple iPad Air 2022 10.9 WiFi + 5G 64GB Space Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caterpillar CAT S42H+ Dual Sim 32GB Black</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fairphone 4 6/128GB Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Apple iPhone 12 Pro - 1TB</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="3" class="text-end" >Totaal excl. BTW</th>
+                    <td>&euro;396</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Verder winkelen</button>
+              <a class="btn btn-primary" href="order.html">Bestellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-light p-3 border-top">
+      <p class="text-center mb-0"><small>&copy; 2009-2023 - Alle vermelden prijzen zijn exclusief BTW - <a href="http://www.phoneshop.nl/voorwaarden" target="blank" >Algemene voorwaarden</a>
+      <br>Phoneshop - Elbe 25 - 2491 BT Den Haag - tel. +31(0)70-427.62.62 - KvK nr. 27149566 - BTW nr. NL 805.653.193 B01<br>
+      Ingelogd als Peter Vossen Inc.</small></p>
+    </footer>
+
+  </body>
+</html>

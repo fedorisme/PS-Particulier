@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Phoneshop</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="ps-bannercolor container-fluid">
+        <div class="container pb-1 d-flex align-items-center justify-content-between">
+          
+          <picture>
+            <a href="index.html"><img id="header-logo" src="images/phoneshopdark-solo.png" alt="Phoneshop logo"></a>
+            <p class="ps-text-orange logotagline">meer dan <spam id="jaarbestaan">27</spam> jaar telecomervaring!</p>
+          </picture>
+
+          <div class="d-flex align-items-center">
+            <div class="bg-white my-2 px-2 rounded-pill">
+              <input type="text" name="zoekVeld" id="zoekVeld" class="border-0" placeholder="Zoek (Model/SKU/Art.nr.)">
+              <button class="btn border-0 px-1" type="button"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="ms-2 d-flex flex-column flex-sm-row">
+              <div class="pt-1"><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person text-white h2 nudge"></i></a></div>
+              <div class="ms-sm-2"><a href="#" data-bs-toggle="modal" data-bs-target="#shoppingcartModal"><i class="bi bi-cart4 text-white h2"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ps-bannercolor">
+        <div class="container d-flex flex-column flex-md-row justify-content-evenly">
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Telefonisch bereikbaar op werkdagen tot 18:00 uur</p>
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Op werkdagen besteld voor 18:00 morgen in huis</p>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg ps-menucolor">
+        <div class="container">
+          <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav fw-semibold">
+              <a class="nav-item nav-link text-light" aria-current="page" href="index.html">Telefoons</a>
+              <a class="nav-item nav-link text-light" href="index.html">Tablets</a>
+              <a class="nav-item nav-link text-light" href="ks-main.html">Klantenservice</a>
+              <a class="nav-item nav-link text-light" href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NL/EN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NL</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="container">
+
+      <h1 class="h2 mt-3">Apple iPad Pro 12.9 2022 WiFi 512GB Silver</h1>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div id="carouselProductContainer" class="p-3 mx-auto mx-sm-0">
+          <div id="carouselProductIndicators" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProductIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProductIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProductIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/phone1.png" class="d-block mx-auto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/phone2.png" class="d-block mx-auto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/phone3.png" class="d-block mx-auto" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="ps-product-bestel d-flex flex-column mx-auto mx-lg-0 align-content-center">
+          <div class="flex-grow-1 my-2">
+            <select name="variant" id="variant" class="">
+              <option value="1">Apple iPad Pro 12.9 2022 WiFi 512GB Black</option>
+              <option value="2">Apple iPad Pro 12.9 2022 WiFi 512GB Yellow</option>
+              <option value="3">Apple iPad Pro 12.9 2022 WiFi 512GB Gold</option>
+              <option value="4">Apple iPad Pro 12.9 2022 WiFi 1TB Black</option>
+              <option value="5">Apple iPad Pro 12.9 2022 WiFi 1TB Yellow</option>
+              <option value="6">Apple iPad Pro 12.9 2022 WiFi 1TB Gold</option>
+            </select>
+            <p class="mt-3">De iPhone 13 mini van Apple iPhone heeft o.a. een opslag capaciteit van 128GB 4GB RAM, 256GB 4GB RAM, 512GB 4GB RAM. De iPhone 13 mini ondersteunt ook Wifi zo kunt u goedkoop en gemakkelijk thuis gebruik maken van internet op uw mobiel. Met de ingebouwde GPS ontvanger kunt u de iPhone 13 mini ook gebruiken om te navigeren. Ook is de iPhone 13 mini voorzien van een USB wat het mogelijk maakt om via uw computer toegang tot uw telefoon te verkrijgen.</p>
+          </div>
+
+          <div class="">
+            <p class="h3 text-end">1965,70</p>
+            <p class="text-success fs-5 mb-1"><i class="bi bi-check-square-fill me-2 text-success"></i>Voorraad <span>> 25</span></p>
+            <div class="d-flex align-items-center">
+              <input class="mx-1 ps-product-amount" type="number" value="1">
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">BESTEL</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <h5>Vaak samen besteld met</h5>
+
+      <div class="d-flex flex-column my-3">
+        <div id="upsell" class="d-flex justify-content-evenly justify-content-sm-between">
+
+          <div class="card me-2">
+            <img src="images/asses001.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay d-flex flex-column ">
+              <h5 class="card-title ps-glow"><a href="#" class="text-decoration-none text-black stretched-link">Card title</a></h5>
+              <div class="d-flex justify-content-between mt-auto">
+                <h5 class="ps-glow">32,54</h5>
+                <button type="button" class="btn btn-primary z-2 btn-sm" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">BESTEL</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card me-2">
+            <img src="images/asses002.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay d-flex flex-column ">
+              <h5 class="card-title ps-glow"><a href="#" class="text-decoration-none text-black stretched-link">Card title</a></h5>
+              <div class="d-flex justify-content-between mt-auto">
+                <h5 class="ps-glow">32,54</h5>
+                <button type="button" class="btn btn-primary z-2 btn-sm" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">BESTEL</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card me-2 d-none d-sm-block">
+            <img src="images/asses003.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay d-flex flex-column ">
+              <h5 class="card-title ps-glow"><a href="#" class="text-decoration-none text-black stretched-link">Card title</a></h5>
+              <div class="d-flex justify-content-between mt-auto">
+                <h5 class="ps-glow">32,54</h5>
+                <button type="button" class="btn btn-primary z-2 btn-sm" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">BESTEL</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card me-2 d-none d-lg-block">
+            <img src="images/asses004.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay d-flex flex-column ">
+              <h5 class="card-title ps-glow"><a href="#" class="text-decoration-none text-black stretched-link">Card title</a></h5>
+              <div class="d-flex justify-content-between mt-auto">
+                <h5 class="ps-glow">32,54</h5>
+                <button type="button" class="btn btn-primary z-2 btn-sm" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">BESTEL</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card me-2 d-none d-xl-block">
+            <img src="images/asses005.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay d-flex flex-column ">
+              <h5 class="card-title ps-glow"><a href="#" class="text-decoration-none text-black stretched-link">Card title</a></h5>
+              <div class="d-flex justify-content-between mt-auto">
+                <h5 class="ps-glow">32,54</h5>
+                <button type="button" class="btn btn-primary z-2 btn-sm" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">BESTEL</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      <hr>
+
+        <div>
+          <h5 class="mb-3">Product details</h5>
+
+          <table id="ps-product-details" class="table table-striped">
+            <tbody>
+              <tr>
+                <th scope="row">Size mobile phone</th>
+                <td>Very large</td>
+              </tr>
+              <tr>
+                <th scope="row">Camera quality</th>
+                <td>Very good</td>
+              </tr>
+              <tr>
+                <th scope="row">Speed class</th>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <th scope="row">Screen quality</th>
+                <td>Very good</td>
+              </tr>
+              <tr>
+                <th scope="row">Total storage capacity</th>
+                <td>256GB</td>
+              </tr>
+              <tr>
+                <th scope="row">Screen size</th>
+                <td>6,6 inches</td>
+              </tr>
+              <tr>
+                <th scope="row">Year introduced</th>
+                <td>2023</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+      <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header ps-menucolor text-white">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Inloggen bij Phoneshop </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="order-label my-1" for="login_user">E-mailadres</label>
+              <input class="order-input" type="text" id="login_user" name="login_user" placeholder="E-mailadres">
+            </div>
+            <div>
+              <label class="order-label my-1" for="login_pass">Wachtwoord</label>
+              <input class="order-input" type="password" id="login_pass" name="login_pass">
+            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginRecoverModal">Wachtwoord vergeten?</a>
+          </div>
+          <div class="modal-footer ps-light-blue">
+            <button type="button" class="btn btn-primary">Inloggen</button>
+          </div>
+        </div>
+      </div>
+     </div> 
+
+     <!-- Login Recover Modal -->
+    <div class="modal fade" id="loginRecoverModal" tabindex="-1" aria-labelledby="loginRecoverModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header ps-menucolor text-white">
+            <h1 class="modal-title fs-5 text-white" id="loginRecoverModalLabel">Wachtwoord vergeten?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Vul je e-mailadres in, dan sturen we je een e-mail waarmee je je wachtwoord opnieuw kunt instellen.</p>
+            <div>
+              <label class="order-label my-1" for="login_recover">E-mailadres</label>
+              <input class="order-input" type="text" id="login_recover" name="login_recover" placeholder="E-mailadres">
+            </div>
+          </div>
+          <div class="modal-footer ps-light-blue">
+            <button type="button" class="btn btn-primary">Stuur e-mail</button>
+          </div>
+        </div>
+      </div>
+     </div> 
+
+      <!-- Shoppingcart Modal -->
+      <div class="modal fade" id="shoppingcartModal" tabindex="-1" aria-labelledby="shoppingcartModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5" id="shoppingcartModalLabel">Winkelmandje</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Aantal</th>
+                    <th class="text-nowrap" scope="col">Per stuk</th>
+                    <th scope="col">Totaal</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">Apple iPad Air 2022 10.9 WiFi + 5G 64GB Space Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caterpillar CAT S42H+ Dual Sim 32GB Black</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fairphone 4 6/128GB Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Apple iPhone 12 Pro - 1TB</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="3" class="text-end" >Totaal excl. BTW</th>
+                    <td>&euro;396</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Verder winkelen</button>
+              <a class="btn btn-primary" href="order.html">Bestellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-light p-3 border-top">
+      <p class="text-center mb-0"><small>&copy; 2009-2023 - Alle vermelden prijzen zijn exclusief BTW - <a href="http://www.phoneshop.nl/voorwaarden" target="blank" >Algemene voorwaarden</a>
+      <br>Phoneshop - Elbe 25 - 2491 BT Den Haag - tel. +31(0)70-427.62.62 - KvK nr. 27149566 - BTW nr. NL 805.653.193 B01<br>
+      Ingelogd als Peter Vossen Inc.</small></p>
+    </footer>
+
+  </body>
+</html>

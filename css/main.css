@@ -1,0 +1,395 @@
+@font-face {
+  font-family: Enigmatic;
+  src: url(../font/EnigmaU_2.TTF);
+}
+
+html {
+    font-size: 80%;
+}
+
+/*#main-content {
+	display: grid;
+	grid-template-areas:
+	"main-filter main-filter"
+	"main-header main-header"
+	"main-content  main-content";
+	grid-template-rows: 32px 1fr;
+	grid-template-columns: 200px 1fr;
+}*/
+
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #3E90E9 !important;
+    border-color: #3E90E9 !important;
+}
+
+.btn-primary:hover {
+    background-color: #559deb !important;
+}
+
+.ps-light-blue {
+	background-color: #e1edfb;
+}
+
+.ps-text-blue {
+	color: #3E90E9;
+}
+
+.ps-text-navy {
+	color: #243763;
+}
+
+.ps-shadow {
+	box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ps-orange {
+	background-color: #2b2f32;
+}
+
+.ps-menucolor {
+	background-color: #3E90E9;
+}
+
+.ps-bannercolor {
+	background-color: #243763;
+}
+
+.ps-green {
+	background-color: #00a79d;
+}
+
+.ps-darkgrey {
+	background-color: #484848;
+}
+
+.ps-text-orange {
+	color: #f7931e;
+}
+
+.ps-text-green {
+	color: #00a79d;
+}
+
+.ps-sku {
+	min-width: auto;
+}
+
+.ps-product-amount {
+	width: 50px
+}
+
+.ps-glow {
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.logotagline {
+	font-family: Enigmatic;
+	font-size: 9px;
+	margin: 0px;
+	text-align: right;
+}
+
+.vinkjestekst {
+	font-family: Enigmatic;
+	font-size: 9px;
+	margin: 0px;
+	color: white;
+}
+
+.vinkjestekst .groenvinkje {
+	color: #00ff00;
+}
+
+#header-logo {
+	max-width: 164px;
+}
+
+.dropdown-menu {
+  min-width: 2rem;
+}
+
+#brand-list {
+/*	grid-area: main-filter;*/
+	height: 32px;
+}
+
+#zoekVeld {
+	width: 65px;
+}
+
+#zoekVeld:focus {
+	outline: none;
+}
+
+::placeholder {
+  color: #bbb;
+}
+
+.product-card img {
+	max-height: 200px;
+/*	width: auto;*/
+	object-fit: contain;
+}
+
+#tile-view .card {
+	width: 275px;
+}
+
+#list-view input {
+	width: 50px
+}
+
+#shopping-basket input {
+	width: 50px
+}
+
+#shoppingcartModal input {
+	width: 50px
+}
+
+.list-image {
+	max-height: 30px;
+	object-fit: contain;
+}
+
+.order-input {
+	width: 7rem;
+	border-radius: 0.375rem;	
+	border: 1px solid #dee2e6;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.order-input[type=text]:focus {
+  border: 2px solid #f7931e;
+  box-shadow: 0px 0px 3px 0px rgba(247,147,30,1);
+  outline-width: 0;
+}
+
+.order-adres-list {
+	width: 220px;
+}
+
+.order-label {
+	width: 6rem;
+}
+
+.ks-nav-box {
+	width: 300px;
+}
+
+.ks-nav-box p {
+	text-decoration: none;
+}
+
+.ks-nav-box:hover {
+	transform: scale(1.02);
+}
+
+#carouselProductContainer {
+	height: 222px;
+	width: 322px;
+}
+
+#carouselProductContainer img {
+	max-height: 200px;
+}
+
+#upsell .card {
+	width: 164px;
+	height: 164px;
+}
+
+.contact-box {
+	width: 100%;
+}
+
+.mapscontainer {
+	width: 100%;
+	height: 400px;
+}
+
+@media only screen and (min-width: 360px) {
+	#zoekVeld {
+		width: 75px;
+	}
+
+	.order-label {
+		width: 7rem;
+	}
+}
+
+@media only screen and (min-width: 448px) {
+	#zoekVeld {
+		width: 100px;
+	}
+
+	#header-logo {
+		max-width: 246px;
+	}
+
+	.logotagline {
+		font-size: 13px;
+	}
+
+	.vinkjestekst {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	#tile-view .card {
+		width: 222px;
+	}
+}
+
+@media only screen and (min-width: 575px) {
+	html {
+	    font-size: 100%;
+	}
+
+/*	#main-content {
+		grid-template-rows: 40px 1fr;
+	}*/
+
+	#brand-list {
+		height: 40px;
+	}
+
+	#zoekVeld {
+		width: 120px;
+	}
+
+	#header-logo {
+		max-width: 246px;
+	}
+
+	#tile-view .card {
+		width: 245px;
+	}
+
+	.ps-sku {
+		min-width: 150px;
+	}
+
+	#carouselProductContainer {
+		height: 432px;
+		width: 532px;
+	}
+
+	#carouselProductContainer img {
+		max-height: 400px;
+	}
+
+	#ps-product-details th {
+		width: 300px;
+	}
+
+	#ps-product-details {
+		font-size: 0.8rem;
+	}
+
+	.order-input {
+		width: 9rem;
+	}	
+}
+
+@media only screen and (min-width: 767px) {
+	#header-logo {
+		max-width: 273px;
+	}
+
+	.logotagline {
+		font-size: 15px;
+	}
+
+	#zoekVeld {
+		width: 240px;
+	}
+
+	#tile-view .card {
+		width: 220px;
+	}
+
+	.ps-sku {
+		min-width: 170px;
+	}
+
+	#upsell .card {
+		width: 220px;
+		height: 220px;
+	}
+
+	.ps-product-bestel {
+		width: 340px;
+	}	
+
+	.vinkjestekst {
+		font-size: 13px;
+	}
+
+	.order-label {
+		width: 8rem;
+	}
+
+	.order-input {
+		width: 10rem;
+	}	
+}
+
+@media only screen and (min-width: 991px) {
+/*	#main-content {
+		grid-template-areas:
+		"main-filter main-header"
+		"main-filter main-content"
+		"main-filter main-content";
+		grid-template-rows: 36px 1fr;
+	}*/
+
+	#brand-list {
+		width: 200px;
+		height: auto;
+	}
+
+	#zoekVeld {
+		width: 300px;
+	}
+
+	#tile-view .card {
+			width: 232px;
+		}
+
+	.ps-shadow {
+		box-shadow: 0px 0px;
+	}
+
+
+	#shoppingcartModal table {
+		font-size: 0.8rem;
+	}
+
+	.ps-product-bestel {
+		width: 440px;
+	}	
+
+	.contact-box {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1199px) {
+	#tile-view .card {
+			width: 270px;
+		}
+
+	#shopping-basket {
+		max-width: 50%;
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (min-width: 1399px) {
+	#tile-view .card {
+		width: 260px;
+	}
+}

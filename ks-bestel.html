@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Phoneshop</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="ps-bannercolor container-fluid">
+        <div class="container pb-1 d-flex align-items-center justify-content-between">
+          
+          <picture>
+            <a href="index.html"><img id="header-logo" src="images/phoneshopdark-solo.png" alt="Phoneshop logo"></a>
+            <p class="ps-text-orange logotagline">meer dan <spam id="jaarbestaan">27</spam> jaar telecomervaring!</p>
+          </picture>
+
+          <div class="d-flex align-items-center">
+            <div class="bg-white my-2 px-2 rounded-pill">
+              <input type="text" name="zoekVeld" id="zoekVeld" class="border-0" placeholder="Zoek (Model/SKU/Art.nr.)">
+              <button class="btn border-0 px-1" type="button"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="ms-2 d-flex flex-column flex-sm-row">
+              <div class="pt-1"><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person text-white h2 nudge"></i></a></div>
+              <div class="ms-sm-2"><a href="#" data-bs-toggle="modal" data-bs-target="#shoppingcartModal"><i class="bi bi-cart4 text-white h2"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ps-bannercolor">
+        <div class="container d-flex flex-column flex-md-row justify-content-evenly">
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Telefonisch bereikbaar op werkdagen tot 18:00 uur</p>
+          <p class="vinkjestekst"><i class="bi bi-check groenvinkje"></i>Op werkdagen besteld voor 18:00 morgen in huis</p>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg ps-menucolor">
+        <div class="container">
+          <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav fw-semibold">
+              <a class="nav-item nav-link text-light" aria-current="page" href="index.html">Telefoons</a>
+              <a class="nav-item nav-link text-light" href="index.html">Tablets</a>
+              <a class="nav-item nav-link text-light" href="ks-main.html">Klantenservice</a>
+              <a class="nav-item nav-link text-light" href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NL/EN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NL</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="container">
+
+      <h1 class="h2 mt-3">Klantenservice</h1>
+
+      <div class="d-flex flex-wrap text-decoration-none">
+        <a href="ks-bestel.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-mailbox ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Bestellen</p>
+          </div>
+        </a>
+        <a href="ks-lever.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-truck ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Levering</p>
+          </div>
+        </a>
+        <a href="ks-klant.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-headset ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Klantenservice</p>
+          </div>
+        </a>
+        <a href="ks-verz.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-file-text ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Verzekeringen</p>
+          </div>
+        </a>
+        <a href="ks-after.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-person-plus ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Aftersales</p>
+          </div>
+        </a>
+        <a href="ks-faq.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-card-checklist ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Faq</p>
+          </div>
+        </a>
+        <a href="ks-ps.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-telephone ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Phoneshop</p>
+          </div>
+        </a>
+        <a href="ks-over.html">
+          <div class="ks-nav-box m-2 ps-light-blue d-flex">
+            <i class="bi bi-question-diamond ps-menucolor h4 text-light py-2 px-3 mb-0"></i>
+            <p class="h5 mb-0 p-2">Overige</p>
+          </div>
+        </a>
+      </div>
+      
+      <h2 class="h3 mt-3">Bestelling plaatsen</h2>
+      <p>Maak uw keuze op onze website door een aanbieding te selecteren of door te klikken op een van de tabbladen bovenaan (Home, Telefoons, Tablets, Abonnementen, Sim Only, of Zakelijk).</p>
+      <h2 class="h3">Stap 1: Bestellen</h2>
+      <p class="mb-1">Nadat u de bestelling van uw keuze heeft geselecteerd, komt u terecht in Stap 1 van het bestelproces. Hier kunt u nog wijzigingen aanbrengen in de abonnementsgegevens, productgegevens en accessoires. </p>
+      <p class="mb-1">Indien u een abonnement bestelt, kunt u hier de abonnementsvorm (Nieuw of Verlenging), de looptijd (1 of 2 jaar) en eventueel aanvullende bundels en opties selecteren.</p>
+      <p>Bij bestelling van een los toestel, kunt u hier nog merk/type/kleur wijzigen en een keuze maken uit ons grote assortiment aan accessoires.</p>
+      <h2 class="h3">Stap 2: Afrekenen</h2>
+      <p>In stap 2 van het bestelproces wordt de bestelling compleet gemaakt door uw persoonsgegevens in te vullen en de leverings- en betaalwijze te selecteren.</p>
+      <h3 class="h4"> account</h3>
+      <p class="mb-1">Indien u voor het eerst een order bij ons plaatst kiest u hier voor de optie Nieuwe klant. U kunt daarna verder gaan met het invullen van Uw gegevens.</p>
+      <p>Wanneer u reeds eerder een order bij ons heeft geplaatst kunt u inloggen met het e-mailadres en wachtwoord dat bij ons bekend is. Uw gegevens worden dan automatisch ingevuld. Weet u uw wachtwoord niet meer, dan kunt u       deze direct opvragen via de link <a href="/wijzigwachtwoord/">Wachtwoord vergeten</a>.</p>
+      <h3 class="h4">Uw gegevens</h3>
+      <p class="mb-1">Als nieuwe particuliere klant vult u hier geslacht, voorletters, achternaam, straat, huisnummer, postcode, plaats, telefoonnummer en e-mailadres in. </p>
+      <p class="mb-1">Bij zakelijke klanten wordt gevraagd om bedrijfsnaam, KvK-nummer, contactpersoon, geslacht, straat, huisnummer, postcode, plaats, telefoonnummer en e-mailadres.</p>
+      <p>Met het opgegeven e-mailadres wordt een account aangemaakt waarbij het e-mailadres uw loginnaam is. Per e-mail wordt u een wachtwoord toegestuurd. Alle gegevens blijven geheim en worden niet aan derden verstrekt.</p>
+      <h3 class="h4">Nummerbehoud</h3>
+      <p class="mb-1">Hier kunt u aangeven of u uw huidige telefoonnummer wenst te behouden. Als u kiest voor nummerbehoud geeft u hier uw huidige type aansluiting en bijbehorende gegevens op:</p>
+      <ul>
+        <li>Abonnement particulier (+ huidig mobiel nummer, simkaartnummer, huidige provider, einddatum huidig contract)</li>
+        <li>Abonnement zakelijk (+ huidig mobiel nummer, klantnummer provider, huidige provider, einddatum huidig contract)</li>
+        <li>Prepaid (+ huidig mobiel nummer, huidig simkaartnummer, huidige provider)</li>
+      </ul>
+      <h3 class="h4">Levering</h3>
+      <p class="mb-1">Vul het gewenste afleveradres voor uw bestelling in. Dit dient een adres in Nederland of Belgi&euml; te zijn.</p>
+      <ul>
+        <li>Zelfde adres (uw bestelling wordt geleverd op hetzelfde adres als uw huisadres).</li>
+        <li>Ander adres (uw bestelling wordt geleverd op een ander adres naar keuze. Vermeld bij het adres van een bedrijf altijd de bedrijfsnaam).</li>
+        <li>Afhalen (uw bestelling is af te halen in ons filiaal in Den Haag). </li>
+      </ul>
+      <h3 class="h4">Afhandeling</h3>
+      <p class="mb-1">Selecteer hier de wijze waarop uw bestelling geleverd wordt en maak een keuze tussen de beschikbare betaalmethoden:</p>
+      <p class="mb-1">Contract zelf printen en opsturen:</p>
+      <ul>
+        <li>Betaling door overmaken</li>
+        <li>Betaling met iDEAL (selecteer uw bank)</li>
+        <li>Betaling bij afhalen in winkel via PIN, creditcard (+ 3,5%) of contant</li>
+      </ul>
+      <h3 class="h4">Bevestig bestelling</h3>
+      <p>Selecteer of u akkoord gaat met onze <a href="/voorwaarden" target="_blank">Algemene Voorwaarden</a> en of u op de hoogte gehouden wenst te worden van onze laatste aanbiedingen. Klik op "Bevestig bestelling" om uw bestelling te bevestigen.</p>
+      <h2 class="h3">Stap 3: Orderbevestiging</h2>
+      <p class="mb-1">In stap 3 van het bestelproces ziet u een opsomming van de bestelde producten van uw order met het nieuw aangemaakte ordernummer. Tevens vindt u hier de betaalinformatie voor het verrichten van de betaling (iDEAL/overmaken). Indien u een order met een abonnement* heeft besteld kunt u hier direct het contract en de orderbevestiging printen. </p>
+      <p>* De minimumleeftijd voor het afsluiten van een abonnement is 18 jaar.</p>
+      <h2 class="h3">Benodigde documenten</h2>
+      <p>Om uw order in behandeling te kunnen nemen dient u de volgende documenten aan ons in te zenden:</p>
+      <h3 class="h4">Particulier nieuw abonnement</h3>
+      <ul>
+        <li>Ondertekend contract</li>
+        <li>Legitimatie (paspoort/identiteitskaart (voor- en achterzijde)/rijbewijs)</li>
+        <li>Bankpas i.c.m. een geslaagde pintransactie van uw eigen rekeningnummer, <u>of</u>:</li>
+        <li>Bankafschrift (met naam en adresgegevens, niet ouder dan 1 maand)</li>
+      </ul>
+      <h3 class="h4">Particulier verlenging abonnement</h3>
+      <ul>
+        <li>Ondertekend contract</li>
+        <li>Legitimatie (paspoort/identiteitskaart (voor- en achterzijde)/rijbewijs)</li>
+      </ul>
+      <h3 class="h4">Zakelijk nieuw abonnement</h3>
+      <ul>
+        <li>Ondertekend contract</li>
+        <li>Legitimatie (paspoort/identiteitskaart (voor- en achterzijde)/rijbewijs)</li>
+        <li>Bankpas i.c.m. een geslaagde pinstransactie van uw eigen rekeningnummer, <u>of</u>:</li>
+        <li>Bankafschrift (met naam en adresgegevens, niet ouder dan 1 maand)</li>
+        <li>Uittreksel van de Kamer van Koophandel (waarop aanvrager als contactpersoon vermeld staat; niet ouder dan 1 maand)</li>
+      </ul>
+      <h3 class="h4">Zakelijk verlenging abonnement</h3>
+      <ul>
+        <li>Ondertekend contract</li>
+        <li>Legitimatie (paspoort/identiteitskaart (voor- en achterzijde)/rijbewijs)</li>
+        <li>Uittreksel van de Kamer van Koophandel (waarop de aanvrager als contactpersoon vermeld staat; niet ouder dan 1 maand)</li>
+       </ul>
+      <p class="mb-1">Informatie over de toe te zenden documenten vindt u eveneens in de Orderbevestiging. Zodra Phoneshop uw bescheiden in goede orde heeft ontvangen en uw aanvraag is goedgekeurd door de provider, wordt uw bestelling verstuurd. In de bevestigingsmail vindt u de verwachte levertijd van uw bestelling. Onder Orderstatus kunt u de voortgang van uw bestelling bekijken.</p>
+      <p class="mb-1">Er zijn verschillende mogelijkheden voor het inzenden van de documenten:</p>
+      <ul>
+        <li>Opsturen per post naar: Phoneshop.nl, Elbe 25, 2491 BT Den Haag.</li>
+        <li>Faxen naar: 070-427.18.87 of 070-392.55.02.</li>
+        <li>Ingescand in JPG- of PDF-formaat e-mailen naar: <a href="mailto:sales@phoneshop.nl">sales@phoneshop.nl</a>.</li>
+        <li>Digitaal gefotografeerd op minimaal 200Kb per pagina e-mailen naar: <a href="mailto:sales@phoneshop.nl">sales@phoneshop.nl</a>.</li>
+      </ul>
+
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Inloggen bij Phoneshop </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <label class="order-label my-1" for="login_user">E-mailadres</label>
+                <input class="order-input" type="text" id="login_user" name="login_user" placeholder="E-mailadres">
+              </div>
+              <div>
+                <label class="order-label my-1" for="login_pass">Wachtwoord</label>
+                <input class="order-input" type="password" id="login_pass" name="login_pass">
+              </div>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#loginRecoverModal">Wachtwoord vergeten?</a>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-primary">Inloggen</button>
+            </div>
+          </div>
+        </div>
+       </div> 
+
+       <!-- Login Recover Modal -->
+      <div class="modal fade" id="loginRecoverModal" tabindex="-1" aria-labelledby="loginRecoverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5 text-white" id="loginRecoverModalLabel">Wachtwoord vergeten?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Vul je e-mailadres in, dan sturen we je een e-mail waarmee je je wachtwoord opnieuw kunt instellen.</p>
+              <div>
+                <label class="order-label my-1" for="login_recover">E-mailadres</label>
+                <input class="order-input" type="text" id="login_recover" name="login_recover" placeholder="E-mailadres">
+              </div>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-primary">Stuur e-mail</button>
+            </div>
+          </div>
+        </div>
+       </div> 
+
+      <!-- Shoppingcart Modal -->
+      <div class="modal fade" id="shoppingcartModal" tabindex="-1" aria-labelledby="shoppingcartModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header ps-menucolor text-white">
+              <h1 class="modal-title fs-5" id="shoppingcartModalLabel">Winkelmandje</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Aantal</th>
+                    <th class="text-nowrap" scope="col">Per stuk</th>
+                    <th scope="col">Totaal</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">Apple iPad Air 2022 10.9 WiFi + 5G 64GB Space Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caterpillar CAT S42H+ Dual Sim 32GB Black</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fairphone 4 6/128GB Grey</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Apple iPhone 12 Pro - 1TB</th>
+                    <td class="p-1"><input value="1" type="number"></td>
+                    <td>&euro;99</td>
+                    <td>&euro;99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="3" class="text-end" >Totaal excl. BTW</th>
+                    <td>&euro;396</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer ps-light-blue">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Verder winkelen</button>
+              <a class="btn btn-primary" href="order.html">Bestellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-light p-3 border-top">
+      <p class="text-center mb-0"><small>&copy; 2009-2023 - Alle vermelden prijzen zijn exclusief BTW - <a href="http://www.phoneshop.nl/voorwaarden" target="blank" >Algemene voorwaarden</a>
+      <br>Phoneshop - Elbe 25 - 2491 BT Den Haag - tel. +31(0)70-427.62.62 - KvK nr. 27149566 - BTW nr. NL 805.653.193 B01<br>
+      Ingelogd als Peter Vossen Inc.</small></p>
+    </footer>
+
+  </body>
+</html>
