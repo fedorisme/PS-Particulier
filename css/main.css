@@ -175,7 +175,7 @@ html {
 }
 
 .ks-nav-box {
-	width: 300px;
+	width: 290px;
 }
 
 .ks-nav-box p {
@@ -216,6 +216,12 @@ html {
 
 	.order-label {
 		width: 7rem;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.ks-nav-box {
+		width: 180px;
 	}
 }
 
@@ -292,6 +298,10 @@ html {
 	.order-input {
 		width: 9rem;
 	}	
+
+	.ks-nav-box {
+		width: 240px;
+	}
 }
 
 @media only screen and (min-width: 767px) {
@@ -335,6 +345,10 @@ html {
 	.order-input {
 		width: 10rem;
 	}	
+
+	.ks-nav-box {
+		width: 330px;
+	}
 }
 
 @media only screen and (min-width: 991px) {
@@ -375,6 +389,10 @@ html {
 	.contact-box {
 		width: 50%;
 	}
+
+	.ks-nav-box {
+		width: 290px;
+	}
 }
 
 @media only screen and (min-width: 1199px) {
@@ -386,10 +404,18 @@ html {
 		max-width: 50%;
 		font-size: 0.8rem;
 	}
+
+	.ks-nav-box {
+		width: 260px;
+	}
 }
 
 @media only screen and (min-width: 1399px) {
 	#tile-view .card {
 		width: 260px;
+	}
+
+	.ks-nav-box {
+		width: 305px;
 	}
 }
